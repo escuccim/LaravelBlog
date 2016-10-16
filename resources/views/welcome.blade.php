@@ -77,7 +77,11 @@
                 <div class="title m-b-md">
                     Eric Scuccimarra
                 </div>
-
+                
+				<div class="links">
+                	<a href="/about">About Me</a>
+                </div>
+					
             </div>
         </div>
     </body>
