@@ -31,6 +31,7 @@ Route::post('about/contact', 'PagesController@sendEmail');
 Route::get('pictures', 'PhotoController@carousel');
 Route::resource('photoadmin', 'PhotoController');
 Route::post('photoadmin/order', 'PhotoController@order');
+/* Auth */
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -50,3 +51,11 @@ Route::get('feed', 'FeedController@generate');
 /* Blog comments */
 Route::post('/comment/add', 'BlogCommentsController@store');
 
+/* Site maps */
+Route::get('sitemap', 'SiteMapController@index');
+Route::get('sitemap/blog', 'SiteMapController@blog');
+Route::get('sitemap/labels', 'SiteMapController@labels');
+Route::get('sitemap/pages', 'SiteMapController@pages');
+
+/* Page to login Google users */
+Route::post('/glogin', 'UserController@loginGoogle');

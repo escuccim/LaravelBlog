@@ -7,14 +7,22 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
+	<meta name="google-signin-client_id" content="613285565368-nk0oi3lketil7d03bk1r6igmnc52ssa8.apps.googleusercontent.com">
+    
+    <title>{{ app_name() }} {{ isset($title) ? ' - ' . $title : '' }}</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/select2.min.css">
+	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 
     <!-- Scripts -->
     <script>
+	    $.ajaxSetup({
+	        headers: {
+	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	        }
+	    });
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
@@ -78,10 +86,15 @@
     </nav>
 	
 	<div class="container">
+			@include('flash::message')
     	@yield('content')
 	</div>
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script>
+		$('div.alert').not('.alert-important').delay(3000).slideUp(300);
+    </script>
+    @yield('footer')
 </body>
 </html>
