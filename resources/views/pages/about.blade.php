@@ -1,21 +1,41 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="row">
-		<div class="col-md-12">
-			<h2>About Me</h2>
-			<hr>
-		</div>	
-	</div>
-	
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			Lorem ipsum dolor sit amet, autem interesset id sea, sea id viderer signiferumque, et fuisset gubergren moderatius vix. Id qui esse ceteros detracto, ius quot libris verterem ad. Docendi eligendi mea no, delectus sadipscing te duo, mea ex recteque postulant reprehendunt. Pri ex affert tacimates philosophia, quaeque omnesque has an, vim an semper tamquam. Eu nec enim errem consulatu. Ut nullam admodum urbanitas nam, duo dicunt euismod aliquando eu. Ei vel choro pericula, ut vis dicta assueverit theophrastus.
-	
-		<p>Ex suas primis facilisi vis. Vel debet delectus conclusionemque id, no his alii velit numquam. Et mollis apeirian has. Ut vide praesent assentior pro. Facer semper theophrastus ut vel, impedit expetenda sed an.
-	
-		<p>Inani impedit et nec, est sanctus intellegam suscipiantur ea. Ea vix officiis perfecto, eu vim partem liberavisse concludaturque. Et rebum equidem maluisset vim, id veritus adolescens instructior qui. Est an dico splendide.
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h2>About Eric Scuccimarra</h2>
+			</div>
+			<div class="panel-body">
+				<p><img src="/images/Eric_Scuccimarra_cropped.jpg" class="img-rounded" align="right" alt="Eric Scuccimarra" title="Eric Scuccimarra">
 		
+				<p>I am a web developer with 20 years of experience. Lately I have been doing most of my work in PHP, but I programmed in
+				ColdFusion for about a decade. I have also used Perl, Ruby, Python and others to a lesser extent . My preferred database 
+				is MySQL but I have worked with most other major relational databases, including MS SQL Server, Oracle, Postgres, etc. 
+				
+				<p>I am available for contract development work.
+				
+				<p>I have a BA in Computer Science from Oberlin College in Oberlin, OH, USA and an MBA from Marist College in Poughkeepsie,
+				NY, USA. I live in Switzerland.
+					
+				<p>This site is written in PHP using the Laravel Framework and Bootstrap CSS. It uses a MySQL database and runs on an 
+				Ubuntu server.  
+				
+				<p>My <a href="/about/cv">CV is available here</a>.
+				
+				<hr>
+				
+				<p>Some of my social media accounts:
+				<ul>
+					<li><a href="https://github.com/escuccim">My GitHub</a>
+					<li><a href="https://www.linkedin.com/in/escuccim">My LinkedIn</a>
+					<li><a href="https://www.xing.com/profile/Eric_Scuccimarra">My XING</a>
+					<li><a href="https://www.youtube.com/user/escuccim">My YouTube</a>
+				</ul>
+			</div>
 		</div>
 	</div>
+</div>	
+
 @endsection
