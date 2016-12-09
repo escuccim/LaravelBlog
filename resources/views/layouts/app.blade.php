@@ -14,7 +14,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/select2.min.css">
-	
+	<script src="/js/app.js"></script>
 	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 	 
     <!-- Scripts -->
@@ -42,7 +42,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+ 
     <script>
 		$('div.alert').not('.alert-important').delay(3000).slideUp(300);
     </script>

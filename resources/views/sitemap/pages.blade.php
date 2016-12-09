@@ -38,28 +38,4 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 	</url>
-	<url>
-    	<loc>{{ app_url() }}/projects</loc>
-        <lastmod>{{ $lastMod }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-	</url>
-	<url>
-    	<loc>{{ app_url() }}/records</loc>
-        <lastmod>{{ $lastMod }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-	</url>
-	<url>
-    	<loc>{{ app_url() }}/records/api</loc>
-        <lastmod>{{ $lastMod }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-	</url>
-	<url>
-    	<loc>{{ app_url() }}/sudoku</loc>
-        <lastmod>{{ $lastMod }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-	</url>
 </urlset>
