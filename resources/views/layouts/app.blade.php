@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-	<meta name="google-signin-client_id" content="613285565368-nk0oi3lketil7d03bk1r6igmnc52ssa8.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="556265380008-lap52g9fj0qsdn4c47lsdnr7ap3bi1g2.apps.googleusercontent.com">
     
     <title>{{ app_name() }} {{ isset($title) ? ' - ' . $title : '' }}</title>
 
