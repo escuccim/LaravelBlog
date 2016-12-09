@@ -21,3 +21,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Photo::class, function(){
+	return [
+		'order' => 0,
+		'file' => 'dummy.jpg',
+		'title' => 'Test Photo',
+		'caption' => 'Test Caption',
+		'active' => 1,
+	];
+});

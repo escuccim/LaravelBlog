@@ -8,7 +8,7 @@
 				<h2>About Eric Scuccimarra</h2>
 			</div>
 			<div class="panel-body">
-				<p><img src="/images/Eric_Scuccimarra_cropped.jpg" class="img-rounded" align="right" alt="Eric Scuccimarra" title="Eric Scuccimarra">
+				<p><img src="/images/Eric_Scuccimarra_photo.jpg" class="img-rounded" align="right" alt="Eric Scuccimarra" title="Eric Scuccimarra">
 		
 				<p>I am a web developer with 20 years of experience. Lately I have been doing most of my work in PHP, but I programmed in
 				ColdFusion for about a decade. I have also used Perl, Ruby, Python and others to a lesser extent . My preferred database 

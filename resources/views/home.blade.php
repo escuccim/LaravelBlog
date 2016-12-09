@@ -7,23 +7,12 @@
     	<div class="panel panel-default">
 			<div class="panel-heading gray"><h4>Welcome!</h4></div>
 			<div class="panel-body">
-				<p><strong>What's New</strong>
-				<p>In the last few weeks I've added a few new things here:
-				<ul>
-					<li>I added data from Discogs to my <a href="{{ url('/records') }}">Record Collection</a>. Almost all of
-					the records now have a link to more detailed info on Discogs.com and a thumbnail image I pull from Discogs.
-					<li>I made an API for my record collection data and <a href="{{ url('/records/api') }}">documented it</a>.
-				</ul>
-				
-            	<p>Older stuff:
-                
+				<p>Welcome to my personal web site. What is here so far:
                 <ul>
-                	<li><a href="{{ url('/records') }}">My Record Collection</a> - searchable and sortable</li>
-					<li><a href="{{ url('/projects/sudoku') }}">Sudoku Solver</a></li>
-	                <li><a href="{{ url('/about') }}">About Me</a></li>
+                	<li><a href="{{ url('/blog') }}">My Blog</a></li>
+                	<li><a href="{{ url('/about') }}">About Me</a></li>
 	                <li><a href="{{ action('PagesController@cv') }}">My CV</a></li>
 	                <li><a href="{{ action('PagesController@contact') }}">Contact Me</a></li>
-	                <li><a href="{{ url('/blog') }}">My Blog</a></li>
 				</ul>
 				
 				@if(Auth::check())
