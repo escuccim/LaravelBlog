@@ -15,7 +15,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
         <image:image>
-         <image:loc>{{ app_url() }}/images/Eric_Scuccimarra_cropped.jpg</image:loc>
+         <image:loc>{{ app_url() }}/images/Eric_Scuccimarra_photocropped.jpg</image:loc>
          <image:caption>Eric Scuccimarra</image:caption>
          <image:title>Eric Scuccimarra</image:title>
        </image:image>
