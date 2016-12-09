@@ -98,17 +98,20 @@ class Blog extends Model
     	$currentYear = 0;
     	$currentMonth = 0;
     	
-    	foreach($links as $link){
-    		if($currentYear != $link->year){
-    			$archiveArray[$link->year] = [];
-    			$currentYear = $link->year;
-    		}
-    		if($currentMonth != $link->month){
-    			$archiveArray[$link->year][$link->month_name] = [];
-    			$currentMonth = $link->month;
-    		}
-    		$archiveArray[$link->year][$link->month_name][] = ['slug' => $link->slug, 'title' => $link->title];
-    	
+    	if(count($links)){
+	    	foreach($links as $link){
+	    		if($currentYear != $link->year){
+	    			$archiveArray[$link->year] = [];
+	    			$currentYear = $link->year;
+	    		}
+	    		if($currentMonth != $link->month){
+	    			$archiveArray[$link->year][$link->month_name] = [];
+	    			$currentMonth = $link->month;
+	    		}
+	    		$archiveArray[$link->year][$link->month_name][] = ['slug' => $link->slug, 'title' => $link->title];
+	    	}
+    	} else {
+    		$archiveArray = [];
     	}
     	
     	return $archiveArray;
