@@ -69,7 +69,7 @@ class BlogTest extends TestCase
 	    	->type('PHP Unit Test', 'title')
 	    	->type('PHP Unit Test', 'slug')
 	    	->type('PHP Unit Test', 'body')
-	    	->select('3', 'tags')
+	    	->select('2', 'tags')
 	    	->press('Add Blog Post')
 	    	->see('Your blog has been created')
 	    	->seePageIs('/blog')
