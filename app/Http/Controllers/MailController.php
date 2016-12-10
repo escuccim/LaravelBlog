@@ -26,7 +26,7 @@ class MailController extends Controller
 		Mail::send('email.send', ['title' => $title, 'content' => $content], function($message){
 			$message->from('skooch@gmail.com', 'Eric S');
 			$message->to('eric@skoo.ch');
-			$message->subject('New Registration');
+			$message->subject('New Registration on EricScuccimarra.net');
 		});
 		
 		return response()->json(['message' => 'Request completed']);

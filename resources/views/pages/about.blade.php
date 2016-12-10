@@ -10,17 +10,14 @@
 			<div class="panel-body">
 				<p><img src="/images/Eric_Scuccimarra_photo.jpg" class="img-rounded" align="right" alt="Eric Scuccimarra" title="Eric Scuccimarra">
 		
-				<p>I am a web developer with 20 years of experience. Lately I have been doing most of my work in PHP, but I programmed in
-				ColdFusion for about a decade. I have also used Perl, Ruby, Python and others to a lesser extent . My preferred database 
-				is MySQL but I have worked with most other major relational databases, including MS SQL Server, Oracle, Postgres, etc. 
+				<p>I am a web developer living in Switzerland. I have another <a href="http://www.skoo.ch">web site</a> that I 
+				use more to try out new things and post programming projects and such I am working on, so this one will probably
+				be more of a personal web site. 
 				
-				<p>I am available for contract development work.
-				
-				<p>I have a BA in Computer Science from Oberlin College in Oberlin, OH, USA and an MBA from Marist College in Poughkeepsie,
-				NY, USA. I live in Switzerland.
+				<P>I am available for contract development work.
 					
-				<p>This site is written in PHP using the Laravel Framework and Bootstrap CSS. It uses a MySQL database and runs on an 
-				Ubuntu server.  
+				<p>This site is written in PHP using the Laravel Framework. It runs on an Ubuntu server and uses a MySQL database.
+				It uses the Bootstrap CSS framework, and I make use of Redis for some things.
 				
 				<p>My <a href="/about/cv">CV is available here</a>.
 				

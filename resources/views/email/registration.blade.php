@@ -1,7 +1,7 @@
 <html>
 <head></head>
 <body>
-A new user registered on skoo.ch.
+A new user registered on ericscuccimarra.net.
 
 <p>Name: {{ $user->name }}
 <P>Email: {{ $user->email }}
