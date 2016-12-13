@@ -8,7 +8,7 @@
 				<h2>About Eric Scuccimarra</h2>
 			</div>
 			<div class="panel-body">
-				<p><img src="/images/EricScuccimarra-picture.jpg" style="max-height: 175px" class="img-rounded" align="right" alt="Eric Scuccimarra" title="Eric Scuccimarra">
+				<p><img src="/images/EricScuccimarra-picture.jpg" style="max-height: 175px; padding-left: 6px; padding-right: 6px; border-radius: 15px;" class="img-rounded" align="right" alt="Eric Scuccimarra" title="Eric Scuccimarra">
 		
 				<p>I am a web developer living in Switzerland. I have another <a href="http://www.ericscuccimarra.com">web site</a> that I 
 				use more to try out new things and post programming projects and such I am working on, so this one will probably
