@@ -19,6 +19,11 @@
          <image:caption>Eric Scuccimarra</image:caption>
          <image:title>Eric Scuccimarra</image:title>
        </image:image>
+       <image:image>
+         <image:loc>{{ app_url() }}/images/EricScuccimarra-picture.jpg</image:loc>
+         <image:caption>Eric Scuccimarra</image:caption>
+         <image:title>Eric Scuccimarra</image:title>
+       </image:image>
 	</url>
 	<url>
     	<loc>{{ app_url() }}/about/cv</loc>

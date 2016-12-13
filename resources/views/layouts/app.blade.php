@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta name="description" content="Eric Scuccimarra's personal blog and web site.">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="google-signin-client_id" content="556265380008-lap52g9fj0qsdn4c47lsdnr7ap3bi1g2.apps.googleusercontent.com">
