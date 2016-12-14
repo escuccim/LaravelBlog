@@ -7,13 +7,15 @@
     	<div class="panel panel-default">
 			<div class="panel-heading gray"><h4>Welcome!</h4></div>
 			<div class="panel-body">
-				<p>Welcome to my personal web site. What is here so far:
+				<p><img src="/images/Eric_Scuccimarra_photo.jpg" alt="Eric Scuccimarra" title="Eric Scuccimarra" align="right" class="img-rounded" >
+				Welcome to my personal web site. What is here so far:
                 <ul>
                 	<li><a href="{{ url('/blog') }}">My Blog</a></li>
                 	<li><a href="{{ url('/about') }}">About Me</a></li>
 	                <li><a href="{{ action('PagesController@cv') }}">My CV</a></li>
 	                <li><a href="{{ action('PagesController@contact') }}">Contact Me</a></li>
 				</ul>
+		
 				
 				@if(Auth::check())
 					@if(Auth::user()->isAdmin())

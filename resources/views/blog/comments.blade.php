@@ -33,7 +33,7 @@
 				<div class="list-group">
 					<div class="list-group-item">
 						@if($comment->author->image)
-							<img src="{{ $comment->author->image }}" align="left" style="padding-right: 5px; max-height: 40px">
+							<img src="{{ $comment->author->image }}" align="left" style="padding-right: 5px; max-height: 40px" alt="{{ $comment->author->name }}">
 						@endif
 						<strong>{{ $comment->author->name }}</strong>
 						<p> {{ $comment->created_at->format('M d, Y \a\t h:i a') }}
