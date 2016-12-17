@@ -23,23 +23,13 @@ Route::get('/users/{id}', 'UserController@edit');
 
 /* About pages */
 Route::get('about', 'PagesController@about');
-Route::get('about/cv', 'PagesController@cv');
 Route::get('about/contact', 'PagesController@contact');
 Route::post('about/contact', 'PagesController@sendEmail');
 
-/* Photo Carousel */
-Route::get('pictures', 'PhotoController@carousel');
-Route::resource('photoadmin', 'PhotoController');
-Route::post('photoadmin/order', 'PhotoController@order');
 /* Auth */
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-
-/* CV Admin */
-Route::resource('cvadmin', 'JobsController');
-Route::get('cvadmin/{id}/delete', 'JobsController@delete');
-Route::post('cvadmin/order', 'JobsController@order');
 
 /* Blog admin */
 Route::get('/blog/labels/{id}', 'BlogController@tags');
@@ -56,6 +46,3 @@ Route::get('sitemap', 'SiteMapController@index');
 Route::get('sitemap/blog', 'SiteMapController@blog');
 Route::get('sitemap/labels', 'SiteMapController@labels');
 Route::get('sitemap/pages', 'SiteMapController@pages');
-
-/* Page to login Google users */
-Route::post('/glogin', 'UserController@loginGoogle');
