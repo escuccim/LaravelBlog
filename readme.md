@@ -12,15 +12,15 @@ php artisan migrate
 php artisan db:seed
 
 This will create the following tables used in Laravel's built-in Auth:
-  users
-  password_resets
-And add some fields to the users table if it already exists.
+- users
+- password_resets
+- And add some fields to the users table if it already exists.
   
- And the following tables for blogs:
-  blogs
-  blogcomments
-  blog_tag
-  tags
+And the following tables for blogs:
+- blogs
+- blogcomments
+- blog_tag
+- tags
   
 The database will be seeded with one Admin use identified by 'admin@example.com' and 'password.' 
 The database will also be seeded with a test label for the blogs called, appropriately, 'test', and an initial post tagged with label 'test.'
