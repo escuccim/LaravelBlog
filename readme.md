@@ -34,3 +34,10 @@ Also note that when you view these pages as an admin the data is always pulled f
 
 Lastly the users table contains a field for an image for each user. If the image exists it will be loaded next to their name when displaying their comments. Setting this image is beyond the scope of this package, but be aware it is there if you want to use it.
 
+## Other Features
+I make use of the following packages:
+- laracasts/flash - to display flash messages about the success or failure of operations
+- roumen/feed - to create an RSS feed
+- predis/predis - optional if you want to use Redis as your cache drive
+
+I also create sitemaps for the site which will automatically update to include new blog posts.
