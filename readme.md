@@ -7,7 +7,7 @@ It allows you to post, edit and delete blogs with tags and comments.
 It also includes a homepage with a list of recent blog posts and an archives menu for the list of blog posts. These are stored in the cache to lighten DB load. I personally use Redis, but in the code I use Laravel's Cache facade, with the code to use Redis directly commented out.
 
 ## Install
-To install just clone this, set up your .env file to point to a database, then run:
+To install just clone this, then do composer update to download the Laravel framework if you haven't already. Set up your .env file to point to a database, then run:
 php artisan migrate
 php artisan db:seed
 
