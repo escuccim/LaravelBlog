@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('header')
-<link rel="alternate" type="application/rss+xml" title="Eric Scuccimarra's Blog" href="{{ url('feed') }}" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ url('feed') }}" />
 @endsection
 
 @section('content')

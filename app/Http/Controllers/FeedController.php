@@ -11,8 +11,8 @@ class FeedController extends Controller
 		$blogs = Blog::latest('published_at')->orderBy('id', 'desc')->published()->take(10)->get();
 		
 		$feed = \App::make('feed');
-		$feed->title = 'Eric Scuccimarra\'s Blog';
-		$feed->description = 'Eric\'s Blog About Whatever';
+		$feed->title = 'Blog';
+		$feed->description = 'Blog';
 		// $feed->logo = asset('img/logo.png'); //optional
 		$feed->link = url('feed');
 		$feed->setDateFormat('carbon'); // 'datetime', 'timestamp' or 'carbon'
