@@ -16,30 +16,12 @@ class PageStatusTest extends TestCase
     public function testPagesExist ()
     {
         $this->visit('/')
-        	->assertResponseOK()
-            ->see('Eric Scuccimarra')
-        	->see('Login');
+        	->assertResponseOK();
         
-        $this->visit('/about')
-	        ->assertResponseOK()
-        	->see('About Eric Scuccimarra');
-        
-        $this->visit('/about/cv')
-        	->assertResponseOK()
-        	->see('Professional Experience')
-        	->see('Lumentus')
-        	->see('Education')
-        	->see('Marist College');
-    
-       $this->visit('/about/contact')
-    		->assertResponseOK()
-    		->see('Send Message');
-   	
     	$this->visit('/blog')
 	    	->assertResponseOK()
     		->see('Archives');
     		
-    	
     	$this->visit('/login')
 	    	->assertResponseOK()
     		->see('Login')

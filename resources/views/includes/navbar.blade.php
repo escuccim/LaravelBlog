@@ -17,22 +17,7 @@
 		<div class="collapse navbar-collapse" id="app-navbar-collapse">
 			<!-- Left Side Of Navbar -->
 			<ul class="nav navbar-nav">
-				<li {!! Request::is( 'about') ? 'class="active"' : '' !!}>
-					<a href="/about">About</a>
-				</li>
 				<li {!! Request::is( 'blog*') ? 'class="active"' : '' !!}><a href="/blog">Blog</a></li>
-				
-				<li {!! Request::is( 'about/contact*') ? 'class="active"' : '' !!}><a href="about/contact">Contact Me</a></li>
-				@if(isUserAdmin())
-					<li {!! Request::is( '*admin*') || Request::is('users*') ? 'class="active"' : '' !!}>
-						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Admin<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="/users">User Management</a>
-							<li><a href="/cvadmin">CV Management</a>
-							<li><a href="/photoadmin">Photo Management</a>
-						</ul>
-				@endif
-				
 			</ul>
 
 			<!-- Right Side Of Navbar -->
@@ -47,8 +32,7 @@
 							{{ Auth::user()->name }} <span class="caret"></span></a>
 
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="{{ action('UserController@profile') }}" >Profile</a>
-						<li><a href="{{ url('/logout') }}" onclick="event.preventDefault(); signOut(); document.getElementById('logout-form').submit();">
+						<li><a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
 								Logout </a>
 
 							<form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form></li>

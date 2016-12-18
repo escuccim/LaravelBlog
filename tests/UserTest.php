@@ -82,18 +82,4 @@ class UserTest extends TestCase
     	$user = \App\User::where('email', 'test@example.com')->first();
     	$user->destroy($user->id);
     }
-    
-    public function testHomePermissions(){
-    	$this->visit('/home')
-    		->dontSee('User Management');
-    	
-    	$admin = factory(App\User::class)->create();
-		$admin->type = 1;
-		
-		$this->actingAs($admin)
-			->visit('/home')
-			->see('User Management');
-
-		$admin->destroy($admin->id);
-    }
 }

@@ -60,14 +60,7 @@
                             </div>
                         </div>
                     </form>
-                    
-                    <div class="row">
-                    	<div class="col-md-4 col-md-offset-4 text-center">
-                    		OR
-                    		<p><div class="g-signin2" style="text-align: center;" data-onsuccess="onSignIn" data-longtitle="true" data-width="200"></div><br />
-                    	</div>
-                    </div>
-                </div>
+                  </div>
             </div>
         </div>
     </div>

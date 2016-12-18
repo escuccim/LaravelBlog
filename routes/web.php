@@ -14,22 +14,9 @@
 /* Home and welcome */
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
-	
-/* User pages */
-Route::get('/user/profile', 'UserController@profile');
-Route::post('/user/profile', 'UserController@update');
-Route::get('/users', 'UserController@index');
-Route::get('/users/{id}', 'UserController@edit');
-
-/* About pages */
-Route::get('about', 'PagesController@about');
-Route::get('about/contact', 'PagesController@contact');
-Route::post('about/contact', 'PagesController@sendEmail');
 
 /* Auth */
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
 
 /* Blog admin */
 Route::get('/blog/labels/{id}', 'BlogController@tags');

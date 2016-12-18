@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use DB;
 use App\Blog;
 use App\Tag;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\BlogRequest;
 use Illuminate\Support\Facades\Redis;
+use Illuminate\Support\Facades\Cache;
 
 class BlogController extends Controller
 {
@@ -229,7 +229,8 @@ class BlogController extends Controller
 		$blogs = Blog::published()->orderBy('published_at', 'desc')->orderBy('id', 'desc')->limit(10)->get()->toArray();
 		$serialized = json_encode($blogs);
 		
-		Redis::set('blog:latestposts', $serialized);
+		Cache::put('blog:latestposts', $serialized, 1440);	
+// 		Redis::set('blog:latestposts', $serialized);
 		
 		return true;
 	}

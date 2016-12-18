@@ -139,7 +139,8 @@ class Blog extends Model
      */
 	public static function latestPosts(){
 		// check if the list is in redis
-		$latestPosts = Redis::get('blog:latestposts');
+// 		$latestPosts = Redis::get('blog:latestposts');
+		$latestPosts = Cache::get('blog:latestposts');
 		
 		// if so we need to loop through and convert the dates to strings instead of these stupid objects
 		if($latestPosts) {
@@ -150,7 +151,8 @@ class Blog extends Model
 			$encoded = json_encode($blogs);
 			
 			// put the list into redis
-			Redis::set('blog:latestposts', $encoded);
+// 			Redis::set('blog:latestposts', $encoded);
+			Cache::put('blog:latestposts', $encoded, 1440);
 			
 			// encode and then decode it so we have the same data format no matter whether the list exists or not
 			$blogs = json_decode($encoded);
