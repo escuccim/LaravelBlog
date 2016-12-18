@@ -18,6 +18,7 @@ class CreateBlogTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->string('slug');
+            $table->boolean('published')->default(1);
             $table->text('body');
             $table->timestamp('published_at');
             $table->timestamps();
