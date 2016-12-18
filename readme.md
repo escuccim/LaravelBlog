@@ -14,6 +14,7 @@ php artisan db:seed
 This will create the following tables used in Laravel's built-in Auth:
   users
   password_resets
+And add some fields to the users table if it already exists.
   
  And the following tables for blogs:
   blogs
@@ -31,4 +32,5 @@ Note that on the main blog page Admins will see ALL blog posts, even those that 
 
 Also note that when you view these pages as an admin the data is always pulled from the DB instead of being cached because the admin sees a different screen than normal users.
 
+Lastly the users table contains a field for an image for each user. If the image exists it will be loaded next to their name when displaying their comments. Setting this image is beyond the scope of this package, but be aware it is there if you want to use it.
 
