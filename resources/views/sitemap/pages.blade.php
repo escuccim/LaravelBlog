@@ -8,39 +8,6 @@
         <lastmod>{{ $lastMod }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
-         <image:image>
-         <image:loc>{{ app_url() }}/images/Eric_Scuccimarra_photo.jpg</image:loc>
-         <image:caption>Eric Scuccimarra</image:caption>
-         <image:title>Eric Scuccimarra</image:title>
-       </image:image>
-	</url>
-	<url>
-    	<loc>{{ app_url() }}/about</loc>
-        <lastmod>{{ $lastMod }}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-        <image:image>
-         <image:loc>{{ app_url() }}/images/Eric_Scuccimarra_photo.jpg</image:loc>
-         <image:caption>Eric Scuccimarra</image:caption>
-         <image:title>Eric Scuccimarra</image:title>
-       </image:image>
-       <image:image>
-         <image:loc>{{ app_url() }}/images/EricScuccimarra-picture.jpg</image:loc>
-         <image:caption>Eric Scuccimarra</image:caption>
-         <image:title>Eric Scuccimarra</image:title>
-       </image:image>
-	</url>
-	<url>
-    	<loc>{{ app_url() }}/about/cv</loc>
-        <lastmod>{{ $lastMod }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-	</url>
-	<url>
-    	<loc>{{ app_url() }}/about/contact</loc>
-        <lastmod>{{ $lastMod }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
 	</url>
 	<url>
     	<loc>{{ app_url() }}/blog</loc>
