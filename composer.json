@@ -10,8 +10,7 @@
         "laravelcollective/html": "^5.3",
         "laracasts/flash": "^2.0",
         "predis/predis": "^1.1",
-        "roumen/feed": "~2.10",
-        "guzzlehttp/guzzle": "^6.2"
+        "roumen/feed": "~2.10"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
